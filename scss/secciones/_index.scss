@@ -1,0 +1,385 @@
+body {
+    font-family: $estiloProyecto1;
+}
+
+/* SECCIONES */
+.nosotros {
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: $celeste;
+    border-top: double;
+    background-color: $fondo;
+
+    /* IMAGEN PPAL */
+    .nosotros img {
+        border: double black;
+        border-radius: 0.5rem;
+    }
+
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    p {
+        font-size: 1.5rem;
+        color: $marron;
+        font-weight: 900;
+        line-height: 30px;
+        width: 80%;
+    }
+}
+
+/* SECCIONES */
+.productos {
+    grid-area: productos;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: $celeste;
+    border-top: double;
+    background-image: url(../img/tiramisu.png);
+    background-position: center;
+    background-size: cover;
+
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    p {
+        font-size: 1.5rem;
+        color: $marron;
+        font-weight: 900;
+        line-height: 30px;
+    }
+
+    /* TABLAS DE SABORES*/
+    .productos__tablas {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: baseline;
+
+        /* TABLA DE SABORES*/
+        table {
+            background-color: $celeste;
+            color: $amarillo;
+            border-radius: 0.5rem;
+
+            /* TABLA SELECCIONADA */
+            &:hover {
+                background-color: $amarillo;
+                color: $celeste;
+                transition-duration: 2s;
+            }
+        }
+    }
+}
+
+/* SECCIONES */
+.local {
+    grid-area: locall;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: $celeste;
+    border-top: double;
+    background-image: url(../img/mapaheladeria.png);
+    background-position: center;
+    background-size: 115rem;
+
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    p {
+        font-size: 1.5rem;
+        color: $marron;
+        font-weight: 900;
+        border: double;
+        border-radius: 0.5rem;
+        background-color: $celeste;
+    }
+
+    /* LOCAL SELECCIONADO */
+    .local--activo:hover {
+        background-color: $amarillo;
+        color: $celeste;
+        transition-duration: 2s;
+    }
+
+    /* INFORMACIÓN DE SECCIÓN */
+    .local iframe {
+        display: flex;
+    }
+}
+
+/* SECCIONES */
+.contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $fondo;
+    text-align: center;
+    color: $celeste;
+    border-top: double;
+
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    p {
+        font-size: 1.5rem;
+        color: $marron;
+        font-weight: 900;
+        line-height: 30px;
+    }
+
+    /* FORMULARIO */
+    .contacto__form {
+        width: 80%;
+
+        .contacto__form-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        /* FORMULARIO-INPUT */
+        .contacto__form-input {
+            width: 80%;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border: none;
+            border-bottom: solid 1px;
+            font-size: 1rem;
+            background-color: $celeste;
+            border-radius: 0.5rem;
+            color: $marron;
+        }
+
+        /* FORMULARIO-TEXTO */
+        .contacto__form-text {
+            color: $marron;
+            width: 80%;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border: none;
+            border-bottom: solid 1px;
+            font-size: 1rem;
+            background-color: $celeste;
+            border-radius: 0.5rem;
+        }
+
+        /* FORMULARIO-SUBMIT */
+        .contacto__form-sub {
+            color: $marron;
+            width: 60%;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border: none;
+            border-bottom: solid 1px;
+            font-size: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            background-color: $celeste;
+        }
+
+        /* FORMULARIO SELECCIONADO */
+        .contacto__form--activo:hover {
+            background-color: $marron;
+            color: $amarillo;
+            transition-duration: 2s;
+        }
+    }
+}
+
+/*
+PASO 1: Definir estrategia --> MOBILE LAST
+PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
+PASO 3: Codear condiciones
+
+Media Querys */
+
+/* Si como minimo tengo 768px de ancho.... */
+@media (max-width: 768px) {
+
+    /* SECCIONES */
+    .nosotros {
+        grid-area: nosotros;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        color: $amarillo;
+        border-top: double;
+        background-color: $celeste;
+
+        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+        p {
+            font-size: 1.5rem;
+            color: $mobileletra;
+            font-weight: 900;
+            line-height: 30px;
+            width: 80%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    /* SECCIONES */
+    .productos {
+        color: $marron;
+        border-top: double;
+        background-position: center;
+        background-size: cover;
+
+        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+        p {
+            font-size: 1.5rem;
+            color: $marron;
+            font-weight: 900;
+            line-height: 30px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* TABLAS DE SABORES*/
+        .productos__tablas {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            width: 90%;
+            margin-bottom: 4rem;
+            align-items: center;
+
+            /* TABLA DE SABORES*/
+            table {
+                width: 60%;
+                background-color: $amarillo;
+                color: $celeste;
+                border-radius: 0.5rem;
+                margin-bottom: 4rem;
+
+                /* TABLA SELECCIONADA */
+                &:hover {
+                    background-color: $marron;
+                    color: $amarillo;
+                    transition-duration: 2s;
+                }
+            }
+        }
+    }
+
+    /* SECCIONES */
+    .local {
+        color: $marron;
+        border-top: double;
+        background-position: center;
+        background-size: cover;
+
+        /* INFORMACIÓN DE SECCIÓN */
+        .local__ubicacion {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+
+        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+        p {
+            font-size: 1.5rem;
+            color: $celeste;
+            font-weight: 900;
+            width: 60%;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            border: double;
+            border-radius: 0.5rem;
+            background-color: $amarillo;
+        }
+
+        /* LOCAL SELECCIONADO */
+        .local--activo:hover {
+            background-color: $marron;
+            color: $amarillo;
+            transition-duration: 2s;
+        }
+
+        /* INFORMACIÓN DE SECCIÓN */
+        .local iframe {
+            display: flex;
+        }
+    }
+
+    /* SECCIONES */
+    .contacto {
+        background-color: $celeste;
+        color: $marron;
+        border-top: double;
+
+        /* TITULO SECCIÓN */
+        h2 {
+            color: $mobileletra;
+        }
+
+        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+        p {
+            font-size: 1.5rem;
+            color: $marron;
+            font-weight: 900;
+            line-height: 30px;
+            margin-top: 2rem;
+        }
+
+        /* FORMULARIO */
+        .contacto__form {
+            width: 80%;
+
+            .contacto__form-row {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* FORMULARIO-INPUT */
+            .contacto__form-input {
+                width: 60%;
+                margin-top: 1rem;
+                padding: 0.5rem;
+                border: none;
+                border-bottom: solid 1px;
+                font-size: 1rem;
+                background-color: $amarillo;
+                border-radius: 0.5rem;
+                color: $marron;
+            }
+
+            /* FORMULARIO-TEXTO */
+            .contacto__form-text {
+                color: $marron;
+                width: 75%;
+                margin-top: 1rem;
+                padding: 0.5rem;
+                border: none;
+                border-bottom: solid 1px;
+                font-size: 1rem;
+                background-color: $amarillo;
+                border-radius: 0.5rem;
+            }
+
+            /* FORMULARIO-SUBMIT */
+            .contacto__form-sub {
+                color: $marron;
+                width: 65%;
+                border: none;
+                border-bottom: solid 1px;
+                font-size: 1rem;
+                margin-bottom: 2rem;
+                border-radius: 0.5rem;
+                font-weight: 600;
+                background-color: $amarillo;
+            }
+
+            .contacto__form--activo:hover {
+                background-color: $marron;
+                color: $amarillo;
+                transition-duration: 2s;
+            }
+        }
+    }
+}
