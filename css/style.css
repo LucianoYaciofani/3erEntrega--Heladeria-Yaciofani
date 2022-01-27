@@ -8,6 +8,21 @@
 /*
 Importacion de fuentes de Google Font
 */
+.nosotros p, .productos p, .local p, .contacto p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 30px; }
+
+.contacto .contacto__form .contacto__form-input, .contacto .contacto__form .contacto__form-text, .contacto .contacto__form .contacto__form-sub {
+  color: #5d4037;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: double;
+  border-bottom: solid 1px;
+  font-size: 1rem;
+  background-color: #8c9eff;
+  border-radius: 0.5rem; }
+
 /* GRID */
 .grilla {
   display: grid;
@@ -125,10 +140,7 @@ body {
     border: double black;
     border-radius: 0.5rem; }
   .nosotros p {
-    font-size: 1.5rem;
     color: #5d4037;
-    font-weight: 900;
-    line-height: 30px;
     width: 80%; }
 
 /* SECCIONES */
@@ -146,10 +158,8 @@ body {
   /* PARRAFO PRINCIPAL DE LA SECCIÓN */
   /* TABLAS DE SABORES*/ }
   .productos p {
-    font-size: 1.5rem;
     color: #5d4037;
-    font-weight: 900;
-    line-height: 30px; }
+    width: 80%; }
   .productos .productos__tablas {
     display: flex;
     width: 100%;
@@ -182,9 +192,8 @@ body {
   /* LOCAL SELECCIONADO */
   /* INFORMACIÓN DE SECCIÓN */ }
   .local p {
-    font-size: 1.5rem;
     color: #5d4037;
-    font-weight: 900;
+    width: 30%;
     border: double;
     border-radius: 0.5rem;
     background-color: #8c9eff; }
@@ -208,10 +217,7 @@ body {
   /* PARRAFO PRINCIPAL DE LA SECCIÓN */
   /* FORMULARIO */ }
   .contacto p {
-    font-size: 1.5rem;
-    color: #5d4037;
-    font-weight: 900;
-    line-height: 30px; }
+    color: #5d4037; }
   .contacto .contacto__form {
     width: 80%;
     /* FORMULARIO-INPUT */
@@ -223,38 +229,13 @@ body {
       flex-direction: row;
       align-items: center; }
     .contacto .contacto__form .contacto__form-input {
-      width: 80%;
-      margin: 0.5rem;
-      padding: 0.5rem;
-      border: none;
-      border-bottom: solid 1px;
-      font-size: 1rem;
-      background-color: #8c9eff;
-      border-radius: 0.5rem;
-      color: #5d4037; }
+      width: 80%; }
     .contacto .contacto__form .contacto__form-text {
-      color: #5d4037;
-      width: 80%;
-      margin: 0.5rem;
-      padding: 0.5rem;
-      border: none;
-      border-bottom: solid 1px;
-      font-size: 1rem;
-      background-color: #8c9eff;
-      border-radius: 0.5rem; }
+      width: 80%; }
     .contacto .contacto__form .contacto__form-sub {
-      color: #5d4037;
       width: 60%;
-      margin: 0.5rem;
-      padding: 0.5rem;
-      border: none;
-      border-bottom: solid 1px;
-      font-size: 1rem;
-      margin-top: 2rem;
       margin-bottom: 4rem;
-      border-radius: 0.5rem;
-      font-weight: 600;
-      background-color: #8c9eff; }
+      font-weight: 600; }
     .contacto .contacto__form .contacto__form--activo:hover {
       background-color: #5d4037;
       color: #fff59d;

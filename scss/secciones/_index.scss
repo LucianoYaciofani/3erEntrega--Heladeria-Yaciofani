@@ -21,10 +21,9 @@ body {
 
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     p {
-        font-size: 1.5rem;
+        //LLAMO AL EXTEND CREADO
+        @extend %estilosParrafo;
         color: $marron;
-        font-weight: 900;
-        line-height: 30px;
         width: 80%;
     }
 }
@@ -44,10 +43,10 @@ body {
 
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     p {
-        font-size: 1.5rem;
+        //LLAMO AL EXTEND CREADO
+        @extend %estilosParrafo;
         color: $marron;
-        font-weight: 900;
-        line-height: 30px;
+        width: 80%;
     }
 
     /* TABLAS DE SABORES*/
@@ -88,9 +87,10 @@ body {
 
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     p {
-        font-size: 1.5rem;
+        //LLAMO AL EXTEND CREADO
+        @extend %estilosParrafo;
         color: $marron;
-        font-weight: 900;
+        width: 30%;
         border: double;
         border-radius: 0.5rem;
         background-color: $celeste;
@@ -122,10 +122,9 @@ body {
 
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     p {
-        font-size: 1.5rem;
+        //LLAMO AL EXTEND CREADO
+        @extend %estilosParrafo;
         color: $marron;
-        font-weight: 900;
-        line-height: 30px;
     }
 
     /* FORMULARIO */
@@ -141,43 +140,21 @@ body {
         /* FORMULARIO-INPUT */
         .contacto__form-input {
             width: 80%;
-            margin: 0.5rem;
-            padding: 0.5rem;
-            border: none;
-            border-bottom: solid 1px;
-            font-size: 1rem;
-            background-color: $celeste;
-            border-radius: 0.5rem;
-            color: $marron;
+            @extend %estilosForm;
         }
 
         /* FORMULARIO-TEXTO */
         .contacto__form-text {
-            color: $marron;
             width: 80%;
-            margin: 0.5rem;
-            padding: 0.5rem;
-            border: none;
-            border-bottom: solid 1px;
-            font-size: 1rem;
-            background-color: $celeste;
-            border-radius: 0.5rem;
+            @extend %estilosForm;
         }
 
         /* FORMULARIO-SUBMIT */
         .contacto__form-sub {
-            color: $marron;
             width: 60%;
-            margin: 0.5rem;
-            padding: 0.5rem;
-            border: none;
-            border-bottom: solid 1px;
-            font-size: 1rem;
-            margin-top: 2rem;
+            @extend %estilosForm;
             margin-bottom: 4rem;
-            border-radius: 0.5rem;
             font-weight: 600;
-            background-color: $celeste;
         }
 
         /* FORMULARIO SELECCIONADO */
