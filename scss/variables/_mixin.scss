@@ -1,0 +1,8 @@
+//MIXIN LIKE A PRO
+@mixin estilosParrafo ($color, $tamanio, $peso, $altura, $ancho) {
+    color: $color;
+    font-size: $tamanio;
+    font-weight: $peso;
+    line-height: $altura;
+    width: $ancho;
+}

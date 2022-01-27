@@ -8,11 +8,6 @@
 /*
 Importacion de fuentes de Google Font
 */
-.nosotros p, .productos p, .local p, .contacto p {
-  font-size: 1.5rem;
-  font-weight: 900;
-  line-height: 30px; }
-
 .contacto .contacto__form .contacto__form-input, .contacto .contacto__form .contacto__form-text, .contacto .contacto__form .contacto__form-sub {
   color: #5d4037;
   margin: 0.5rem;
@@ -141,6 +136,9 @@ body {
     border-radius: 0.5rem; }
   .nosotros p {
     color: #5d4037;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 30px;
     width: 80%; }
 
 /* SECCIONES */
@@ -159,6 +157,9 @@ body {
   /* TABLAS DE SABORES*/ }
   .productos p {
     color: #5d4037;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 30px;
     width: 80%; }
   .productos .productos__tablas {
     display: flex;
@@ -169,7 +170,6 @@ body {
     .productos .productos__tablas table {
       background-color: #8c9eff;
       color: #fff59d;
-      border-radius: 0.5rem;
       /* TABLA SELECCIONADA */ }
       .productos .productos__tablas table:hover {
         background-color: #fff59d;
@@ -193,6 +193,9 @@ body {
   /* INFORMACIÓN DE SECCIÓN */ }
   .local p {
     color: #5d4037;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 30px;
     width: 30%;
     border: double;
     border-radius: 0.5rem;
@@ -217,7 +220,11 @@ body {
   /* PARRAFO PRINCIPAL DE LA SECCIÓN */
   /* FORMULARIO */ }
   .contacto p {
-    color: #5d4037; }
+    color: #5d4037;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 30px;
+    width: 100%; }
   .contacto .contacto__form {
     width: 80%;
     /* FORMULARIO-INPUT */

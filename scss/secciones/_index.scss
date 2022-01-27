@@ -21,10 +21,8 @@ body {
 
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     p {
-        //LLAMO AL EXTEND CREADO
-        @extend %estilosParrafo;
-        color: $marron;
-        width: 80%;
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($marron, 1.5rem, 900, 30px, 80%);
     }
 }
 
@@ -43,10 +41,8 @@ body {
 
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     p {
-        //LLAMO AL EXTEND CREADO
-        @extend %estilosParrafo;
-        color: $marron;
-        width: 80%;
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($marron, 1.5rem, 900, 30px, 80%);
     }
 
     /* TABLAS DE SABORES*/
@@ -60,7 +56,6 @@ body {
         table {
             background-color: $celeste;
             color: $amarillo;
-            border-radius: 0.5rem;
 
             /* TABLA SELECCIONADA */
             &:hover {
@@ -87,10 +82,8 @@ body {
 
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     p {
-        //LLAMO AL EXTEND CREADO
-        @extend %estilosParrafo;
-        color: $marron;
-        width: 30%;
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($marron, 1.5rem, 900, 30px, 30%);
         border: double;
         border-radius: 0.5rem;
         background-color: $celeste;
@@ -122,9 +115,8 @@ body {
 
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     p {
-        //LLAMO AL EXTEND CREADO
-        @extend %estilosParrafo;
-        color: $marron;
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($marron, 1.5rem, 900, 30px, 100%);
     }
 
     /* FORMULARIO */
