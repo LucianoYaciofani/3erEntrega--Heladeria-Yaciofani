@@ -18,26 +18,17 @@ Importacion de fuentes de Google Font
   background-color: #8c9eff;
   border-radius: 0.5rem; }
 
-/* GRID */
-.grilla {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "header" "nosotros" "productos" "locall" "contacto" "footer"; }
+.red--instagram {
+  color: white;
+  background-color: #d6249f; }
+  .red--instagram .red__nombre {
+    color: white; }
 
-/*
-PASO 1: Definir estrategia --> MOBILE LAST
-PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
-PASO 3: Codear condiciones
-
-Media Querys */
-/* Si como minimo tengo 768px de ancho.... */
-@media (max-width: 768px) {
-  .grilla {
-    grid-template-rows: auto;
-    grid-template-areas: "header" "nosotros" "productos" "locall" "contacto" "footer"; } }
+.red--facebook {
+  color: #3b5998;
+  background-color: white; }
+  .red--facebook .red__nombre {
+    color: #3b5998; }
 
 /*
 IMPORTO LAS SECCIONES
@@ -129,17 +120,27 @@ body {
   color: #8c9eff;
   border-top: double;
   background-color: #ffe8d6;
-  /* IMAGEN PPAL */
+  /* ANCHO CARROUSEL PPAL */
   /* PARRAFO PRINCIPAL DE LA SECCIÓN */ }
-  .nosotros .nosotros img {
-    border: double black;
-    border-radius: 0.5rem; }
+  .nosotros .ancho {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    /* IMAGENES DEL CARROUSEL */ }
+    .nosotros .ancho img {
+      height: 125vh;
+      width: 100%; }
   .nosotros p {
     color: #5d4037;
     font-size: 1.5rem;
     font-weight: 900;
     line-height: 30px;
-    width: 80%; }
+    width: 80%;
+    /* TEXTO SELECCIONADO */ }
+    .nosotros p:hover {
+      background-color: #5d4037;
+      color: #fff59d;
+      transition-duration: 2s; }
 
 /* SECCIONES */
 .productos {
@@ -160,7 +161,12 @@ body {
     font-size: 1.5rem;
     font-weight: 900;
     line-height: 30px;
-    width: 80%; }
+    width: 80%;
+    /* TEXTO SELECCIONADO */ }
+    .productos p:hover {
+      background-color: #5d4037;
+      color: #fff59d;
+      transition-duration: 2s; }
   .productos .productos__tablas {
     display: flex;
     width: 100%;
@@ -201,8 +207,8 @@ body {
     border-radius: 0.5rem;
     background-color: #8c9eff; }
   .local .local--activo:hover {
-    background-color: #fff59d;
-    color: #8c9eff;
+    background-color: #5d4037;
+    color: #fff59d;
     transition-duration: 2s; }
   .local .local iframe {
     display: flex; }
@@ -224,7 +230,12 @@ body {
     font-size: 1.5rem;
     font-weight: 900;
     line-height: 30px;
-    width: 100%; }
+    width: 100%;
+    /* TEXTO SELECCIONADO */ }
+    .contacto p:hover {
+      background-color: #5d4037;
+      color: #fff59d;
+      transition-duration: 2s; }
   .contacto .contacto__form {
     width: 80%;
     /* FORMULARIO-INPUT */
@@ -266,14 +277,28 @@ Media Querys */
     color: #fff59d;
     border-top: double;
     background-color: #8c9eff;
-    /* PARRAFO PRINCIPAL DE LA SECCIÓN */ }
-    .nosotros p {
-      font-size: 1.5rem;
-      color: #f1f8e9;
-      font-weight: 900;
-      line-height: 30px;
-      width: 80%;
-      margin-bottom: 2rem; }
+    /* ANCHO CARROUSEL PPAL */ }
+    .nosotros .ancho {
+      width: 90%;
+      text-align: center;
+      align-items: center;
+      /* IMAGENES DEL CARROUSEL */
+      /* PARRAFO PRINCIPAL DE LA SECCIÓN */ }
+      .nosotros .ancho img {
+        height: 70vh;
+        width: 100%; }
+      .nosotros .ancho p {
+        color: #f1f8e9;
+        font-size: 1.5rem;
+        font-weight: 900;
+        line-height: 30px;
+        width: 80%;
+        margin-bottom: 2rem;
+        /* TEXTO SELECCIONADO */ }
+        .nosotros .ancho p:hover {
+          background-color: #5d4037;
+          color: #f1f8e9;
+          transition-duration: 2s; }
   /* SECCIONES */
   .productos {
     color: #5d4037;
@@ -283,12 +308,18 @@ Media Querys */
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     /* TABLAS DE SABORES*/ }
     .productos p {
-      font-size: 1.5rem;
       color: #5d4037;
+      font-size: 1.5rem;
       font-weight: 900;
       line-height: 30px;
+      width: 80%;
       margin-top: 2rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      /* TEXTO SELECCIONADO */ }
+      .productos p:hover {
+        background-color: #5d4037;
+        color: #fff59d;
+        transition-duration: 2s; }
     .productos .productos__tablas {
       display: flex;
       flex-direction: column;
@@ -324,9 +355,10 @@ Media Querys */
       width: 100%;
       margin-bottom: 4rem; }
     .local p {
-      font-size: 1.5rem;
       color: #8c9eff;
+      font-size: 1.5rem;
       font-weight: 900;
+      line-height: 30px;
       width: 60%;
       margin-top: 2rem;
       margin-bottom: 3rem;
@@ -350,11 +382,17 @@ Media Querys */
     .contacto h2 {
       color: #f1f8e9; }
     .contacto p {
-      font-size: 1.5rem;
       color: #5d4037;
+      font-size: 1.5rem;
       font-weight: 900;
       line-height: 30px;
-      margin-top: 2rem; }
+      width: 90%;
+      margin-top: 2rem;
+      /* TEXTO SELECCIONADO */ }
+      .contacto p:hover {
+        background-color: #5d4037;
+        color: #f1f8e9;
+        transition-duration: 2s; }
     .contacto .contacto__form {
       width: 80%;
       /* FORMULARIO-INPUT */
@@ -368,7 +406,7 @@ Media Querys */
         width: 60%;
         margin-top: 1rem;
         padding: 0.5rem;
-        border: none;
+        border: double;
         border-bottom: solid 1px;
         font-size: 1rem;
         background-color: #fff59d;
@@ -379,7 +417,7 @@ Media Querys */
         width: 75%;
         margin-top: 1rem;
         padding: 0.5rem;
-        border: none;
+        border: double;
         border-bottom: solid 1px;
         font-size: 1rem;
         background-color: #fff59d;
@@ -387,7 +425,7 @@ Media Querys */
       .contacto .contacto__form .contacto__form-sub {
         color: #5d4037;
         width: 65%;
-        border: none;
+        border: double;
         border-bottom: solid 1px;
         font-size: 1rem;
         margin-bottom: 2rem;
@@ -434,17 +472,12 @@ Media Querys */
 /* LINK - FACEBOOK CON LOGO*/
 .fa-facebook-square {
   font-size: 3rem;
-  color: #3b5998;
-  background-color: white;
   border-radius: 2.5rem; }
 
 /* LINK - INSTAGRAM CON LOGO */
 .fa-instagram {
   font-size: 3rem;
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  border-radius: 5rem;
-  color: white; }
+  border-radius: 5rem; }
 
 /*
 PASO 1: Definir estrategia --> MOBILE LAST

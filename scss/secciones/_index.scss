@@ -13,16 +13,30 @@ body {
     border-top: double;
     background-color: $fondo;
 
-    /* IMAGEN PPAL */
-    .nosotros img {
-        border: double black;
-        border-radius: 0.5rem;
+    /* ANCHO CARROUSEL PPAL */
+    .ancho {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+
+        /* IMAGENES DEL CARROUSEL */
+        img {
+            height: 125vh;
+            width: 100%;
+        }
     }
 
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     p {
         // LLAMO AL MIXIN PRO REALIZADO
         @include estilosParrafo($marron, 1.5rem, 900, 30px, 80%);
+
+        /* TEXTO SELECCIONADO */
+        &:hover {
+            background-color: $marron;
+            color: $amarillo;
+            transition-duration: 2s;
+        }
     }
 }
 
@@ -43,6 +57,13 @@ body {
     p {
         // LLAMO AL MIXIN PRO REALIZADO
         @include estilosParrafo($marron, 1.5rem, 900, 30px, 80%);
+
+        /* TEXTO SELECCIONADO */
+        &:hover {
+            background-color: $marron;
+            color: $amarillo;
+            transition-duration: 2s;
+        }
     }
 
     /* TABLAS DE SABORES*/
@@ -91,8 +112,8 @@ body {
 
     /* LOCAL SELECCIONADO */
     .local--activo:hover {
-        background-color: $amarillo;
-        color: $celeste;
+        background-color: $marron;
+        color: $amarillo;
         transition-duration: 2s;
     }
 
@@ -117,6 +138,13 @@ body {
     p {
         // LLAMO AL MIXIN PRO REALIZADO
         @include estilosParrafo($marron, 1.5rem, 900, 30px, 100%);
+
+        /* TEXTO SELECCIONADO */
+        &:hover {
+            background-color: $marron;
+            color: $amarillo;
+            transition-duration: 2s;
+        }
     }
 
     /* FORMULARIO */
@@ -179,14 +207,31 @@ Media Querys */
         border-top: double;
         background-color: $celeste;
 
-        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
-        p {
-            font-size: 1.5rem;
-            color: $mobileletra;
-            font-weight: 900;
-            line-height: 30px;
-            width: 80%;
-            margin-bottom: 2rem;
+        /* ANCHO CARROUSEL PPAL */
+        .ancho {
+            width: 90%;
+            text-align: center;
+            align-items: center;
+
+            /* IMAGENES DEL CARROUSEL */
+            img {
+                height: 70vh;
+                width: 100%;
+            }
+
+            /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+            p {
+                // LLAMO AL MIXIN PRO REALIZADO
+                @include estilosParrafo($mobileletra, 1.5rem, 900, 30px, 80%);
+                margin-bottom: 2rem;
+
+                /* TEXTO SELECCIONADO */
+                &:hover {
+                    background-color: $marron;
+                    color: $mobileletra;
+                    transition-duration: 2s;
+                }
+            }
         }
     }
 
@@ -199,12 +244,17 @@ Media Querys */
 
         /* PARRAFO PRINCIPAL DE LA SECCIÓN */
         p {
-            font-size: 1.5rem;
-            color: $marron;
-            font-weight: 900;
-            line-height: 30px;
+            // LLAMO AL MIXIN PRO REALIZADO
+            @include estilosParrafo($marron, 1.5rem, 900, 30px, 80%);
             margin-top: 2rem;
             margin-bottom: 2rem;
+
+            /* TEXTO SELECCIONADO */
+            &:hover {
+                background-color: $marron;
+                color: $amarillo;
+                transition-duration: 2s;
+            }
         }
 
         /* TABLAS DE SABORES*/
@@ -251,10 +301,8 @@ Media Querys */
 
         /* PARRAFO PRINCIPAL DE LA SECCIÓN */
         p {
-            font-size: 1.5rem;
-            color: $celeste;
-            font-weight: 900;
-            width: 60%;
+            // LLAMO AL MIXIN PRO REALIZADO
+            @include estilosParrafo($celeste, 1.5rem, 900, 30px, 60%);
             margin-top: 2rem;
             margin-bottom: 3rem;
             border: double;
@@ -288,11 +336,16 @@ Media Querys */
 
         /* PARRAFO PRINCIPAL DE LA SECCIÓN */
         p {
-            font-size: 1.5rem;
-            color: $marron;
-            font-weight: 900;
-            line-height: 30px;
+            // LLAMO AL MIXIN PRO REALIZADO
+            @include estilosParrafo($marron, 1.5rem, 900, 30px, 90%);
             margin-top: 2rem;
+
+            /* TEXTO SELECCIONADO */
+            &:hover {
+                background-color: $marron;
+                color: $mobileletra;
+                transition-duration: 2s;
+            }
         }
 
         /* FORMULARIO */
@@ -310,7 +363,7 @@ Media Querys */
                 width: 60%;
                 margin-top: 1rem;
                 padding: 0.5rem;
-                border: none;
+                border: double;
                 border-bottom: solid 1px;
                 font-size: 1rem;
                 background-color: $amarillo;
@@ -324,7 +377,7 @@ Media Querys */
                 width: 75%;
                 margin-top: 1rem;
                 padding: 0.5rem;
-                border: none;
+                border: double;
                 border-bottom: solid 1px;
                 font-size: 1rem;
                 background-color: $amarillo;
@@ -335,7 +388,7 @@ Media Querys */
             .contacto__form-sub {
                 color: $marron;
                 width: 65%;
-                border: none;
+                border: double;
                 border-bottom: solid 1px;
                 font-size: 1rem;
                 margin-bottom: 2rem;
