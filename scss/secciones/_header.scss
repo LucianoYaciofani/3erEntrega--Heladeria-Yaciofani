@@ -1,6 +1,6 @@
 /* ENCABEZADO */
 header {
-    background: rgb(240, 193, 123);
+    background: $fondoHeader;
     background: radial-gradient(circle, rgba(240, 193, 123, 1) 0%, rgba(249, 248, 243, 1) 100%);
 
     /* SECCIONES */
@@ -13,7 +13,7 @@ header {
         align-content: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        background: rgb(240, 193, 123);
+        background: $fondoHeader;
         background: radial-gradient(circle, rgba(240, 193, 123, 1) 0%, rgba(249, 248, 243, 1) 100%);
 
         /* LOGO */
