@@ -6,3 +6,14 @@
     line-height: $altura;
     width: $ancho;
 }
+
+@mixin estilosForm ($color, $tamanio, $margin, $padding, $border, $fondo, $radio, $ancho) {
+    color: $color;
+    font-size: $tamanio;
+    margin-top: $margin;
+    padding: $padding;
+    border: $border;
+    background-color: $fondo;
+    border-radius: $radio;
+    width: $ancho;
+}

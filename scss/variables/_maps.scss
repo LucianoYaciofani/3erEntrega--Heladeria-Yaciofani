@@ -17,9 +17,18 @@ $color in $redes {
         @else {
             background-color: white;
         }
-
-        .red__nombre {
-            color: $color;
-        }
     }
 }
+
+
+// MAP-GET
+$estiloForm: (colorr: $marron,
+    ancho: 65%,
+    bordes: double,
+    bordeAbajo: solid 1px,
+    tamanio: 1rem,
+    margenAbajo: 2rem,
+    borde: 0.5rem,
+    peso: 600,
+    fondo: $amarillo,
+);
