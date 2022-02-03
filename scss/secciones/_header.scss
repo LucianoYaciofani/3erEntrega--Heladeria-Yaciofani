@@ -66,14 +66,14 @@ Media Querys */
 
     /* ENCABEZADO */
     header {
-        background: rgb(249, 248, 243);
+        background: $fondoHeader;
         background: radial-gradient(circle, rgba(249, 248, 243, 1) 0%, rgba(240, 193, 123, 1) 100%);
 
         /* HEADER */
         .header {
             display: flex;
             list-style: none;
-            background: rgb(249, 248, 243);
+            background: $fondoHeader;
             background: radial-gradient(circle, rgba(249, 248, 243, 1) 0%, rgba(240, 193, 123, 1) 100%);
 
             /* MENU - NAV */
